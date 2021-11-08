@@ -1,10 +1,12 @@
 #!/bin/bash
 
-#echo "Enter the Number"
-
-for i in 1 3 5 7 9
+echo "Enter the path"
+read path
+cd $path
+for i in ls  pwd
 do
- echo $i
+ echo "==$i=="
+$i
 done
-echo ${BASH_VERSION}
 
+exit
