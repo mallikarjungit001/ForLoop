@@ -1,12 +1,10 @@
 #!/bin/bash
 
-echo "Enter the path"
-read path
-cd $path
-for i in ls  pwd
+# to print directry
+for i in *
 do
+ if [ -d $i ]
+then
  echo "==$i=="
-$i
+fi
 done
-
-exit
