@@ -1,12 +1,10 @@
 #!/bin/bash
 
 #echo "Enter the Number"
-#read num
-for i in ls pwd date 
-do
- echo "-- $i--"
- $i
-done
 
+for i in 1 3 5 7 9
+do
+ echo $i
+done
 echo ${BASH_VERSION}
 
