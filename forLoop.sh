@@ -1,9 +1,12 @@
 #!/bin/bash
 
-# to print directry
+echo "Enter the floder path"
+read path
+cd $path
+
 for i in *
 do
- if [ -d $i ]
+ if [ -f $i ]
 then
  echo "==$i=="
 fi
